@@ -1,0 +1,33 @@
+<!-- 
+<div class="row" id="row">
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="../../../assets/women.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Girls corner</h5>
+            </div>
+            <div class="card-body">
+              <a href="" class="card-link" routerLink="/">visit</a>
+            </div>
+          </div>
+    </div> -->
+    <div class="container">
+      <div class="row">
+        @for(item of product; track item.id){
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+              <img src="{{ item.image}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{item.title}}</h5>
+                <h6>{{item.category}}</h6>
+                <p class="card-text">{{item.description}}</p>
+                
+              </div>
+              <div class="card-body">
+                <a class="card-link" routelink="/item.id">visit</a>
+              </div>
+          </div>
+      </div>
+    }
+    </div>
+    </div>
